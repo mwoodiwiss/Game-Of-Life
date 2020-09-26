@@ -1,0 +1,59 @@
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-around;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    padding: 5px 20px;
+    background-color: #3cbbb1;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.controls .button {
+    width: 80px;
+    height: 22px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #b2c9ab;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.controls button {
+    width: 80px;
+    height: 22px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #b2c9ab;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.controls .button:hover {
+    box-shadow: 2px 2px 10px #b2c9ab;
+}
+.controls button:hover {
+    box-shadow: 2px 2px 10px #b2c9ab;
+}
+
+.controls .dropdown {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+}
+.controls .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0 0 20px 2px #b2c9ab;
+    color: white;
+    background-color: #3cbbb1;
+    border: 1px solid white;
+    z-index: 1;
+}
+.controls .dropdown-content p:hover {
+    box-shadow: 2px 2px 10px #b2c9ab;
+}
+.controls .dropdown:hover .dropdown-content {
+    display: block;
+}
